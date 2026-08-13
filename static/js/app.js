@@ -1,0 +1,1 @@
+window.ResumeKairo={get(){try{return JSON.parse(localStorage.getItem("resumekairo")||"{}")}catch(e){return{}}},set(x){localStorage.setItem("resumekairo",JSON.stringify(x))},esc(s=""){return String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]))}};
